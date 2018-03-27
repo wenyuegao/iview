@@ -220,7 +220,7 @@
                 this.$emit('on-change', event);
             },
             handleChange (event) {
-                this.$emit('on-input-change', event);
+                this.$emit('on-input-change', event.target.value);
             },
             setCurrentValue (value) {
                 if (value === this.currentValue) return;
